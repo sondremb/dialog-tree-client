@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { DialogContainer } from './DialogContainer';
 
 interface AppProps {}
 
@@ -34,6 +35,7 @@ function App({}: AppProps) {
           </a>
         </p>
       </header>
+      <DialogContainer />
     </div>
   );
 }
