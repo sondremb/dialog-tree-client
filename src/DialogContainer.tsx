@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { AstraLine } from './AstraLine';
+import { DialogLine } from './DialogLine';
 import { PlayerResponse } from './PlayerResponse';
 
 type StrippedLine = { id: id; content: LineContent; responses?: StrippedLine };
@@ -44,7 +44,7 @@ export const DialogContainer = () => {
   return (
     <div>
       {content.map((line, i) => (
-        <AstraLine {...line} key={i} />
+        <DialogLine {...line} key={i} />
       ))}
       <br />
       {data.responses.map((resp: StrippedLine, i: number) => (

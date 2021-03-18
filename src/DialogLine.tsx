@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 type Props = { content: LineContent; fromPlayer: boolean };
 
-export const AstraLine = (props: Props) => {
+export const DialogLine = (props: Props) => {
   return (
     <div style={{ textAlign: 'center' }}>
       <p
